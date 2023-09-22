@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -12,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using classLibraryForSums;
 
 namespace WpfApp1
 {
@@ -23,6 +26,7 @@ namespace WpfApp1
         public MainWindow()
         {
             InitializeComponent();
+            randomSumGenerator generator = new randomSumGenerator();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

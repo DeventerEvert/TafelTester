@@ -31,7 +31,7 @@ namespace WpfApp1
 
             scoreLabel.Content = score;
 
-            randomEasySumGenerator generator = new randomEasySumGenerator();
+            randomSumGenerator generator = new randomSumGenerator();
 
             string randomSum = generator.generateEasyRandomSum(out generatedResult);
 
@@ -57,7 +57,7 @@ namespace WpfApp1
                         MessageBox.Show("Goed gedaan!");
                         inputBox.Text = "";
 
-                        randomEasySumGenerator generator = new randomEasySumGenerator();
+                        randomSumGenerator generator = new randomSumGenerator();
 
                         string randomSum = generator.generateEasyRandomSum(out generatedResult);
                         easySum.Text = randomSum;

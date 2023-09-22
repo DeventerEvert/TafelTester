@@ -5,16 +5,61 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="hardWindow"
+        Background="IndianRed"
+        Title="easyWindow"
         Height="450"
         Width="800">
     <Grid>
-        <Button Content="Button"
-                HorizontalAlignment="Center"
-                Margin="0,174,0,0"
-                VerticalAlignment="Top"
-                Width="266"
-                Height="77" />
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="220" />
+            <ColumnDefinition Width="0.5*" />
+            <ColumnDefinition Width="220" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100" />
+            <RowDefinition Height="0.5*" />
+            <RowDefinition Height="100" />
+        </Grid.RowDefinitions>
+        <TextBlock HorizontalAlignment="Left"
+                   Grid.Row="1"
+                   Grid.Column="1"
+                   TextWrapping="Wrap"
+                   VerticalAlignment="center"
+                   Name="hardSum"
+                   Text="textBlock"
+                   FontSize="20"
+                   Padding="20px" />
+        <TextBox HorizontalAlignment="Left"
+                 BorderThickness="0,0,0,2"
+                 Grid.Row="1"
+                 Grid.Column="1"
+                 TextWrapping="Wrap"
+                 Text=""
+                 Name="inputBox"
+                 VerticalAlignment="Center"
+                 Padding="10px"
+                 Width="80"
+                 Margin="145,0,0,0"
+                 Height="34" />
+        <Button Content="Invoeren"
+                Grid.Row="1"
+                Grid.Column="1"
+                Padding="10"
+                HorizontalAlignment="center"
+                Name="calcBtn"
+                Click="calcBtn_Click"
+                IsDefault="true"
+                VerticalAlignment="center"
+                Margin="211,0,0,0" />
+        <Label Content=""
+               HorizontalAlignment="Left"
+               Margin="133,0,0,0"
+               Name="scoreLabel"
+               VerticalAlignment="Top" />
+        <Label Content="Antwoorden goed op rij:"
+               Grid.Row="0"
+               Grid.Column="0"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top" />
     </Grid>
 </Window>
