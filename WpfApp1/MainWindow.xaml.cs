@@ -32,19 +32,19 @@ namespace WpfApp1
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Window easyWindow = new easyWindow();
-            easyWindow.Show();
+            easyWindow.ShowDialog();
         }
 
         private void mediumBtn_Click(object sender, RoutedEventArgs e)
         {
             Window mediumWindow = new mediumWindow();
-            mediumWindow.Show();
+            mediumWindow.ShowDialog();
         }
 
         private void hardBtn_Click(object sender, RoutedEventArgs e)
         {
             Window hardWindow = new hardWindow();
-            hardWindow.Show();
+            hardWindow.ShowDialog();
         }
     }
 }
